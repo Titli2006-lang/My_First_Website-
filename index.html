@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>How Well Do You Know Me?</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- WELCOME PAGE -->
+
+    <div id="welcome-screen" class="screen">
+
+        <div class="welcome-card">
+
+            <div class="welcome-icon"><img src="images/welcome.jpg" alt="Welcome">
+            </div>
+
+            <h1>How Well Do You Know Niriksha?</h1>
+
+            <p>
+                Let's see how much you actually know about me!
+            </p>
+
+            <input
+                type="text"
+                id="name-input"
+                placeholder="Enter your identity🧐"
+                maxlength="30"
+            >
+
+            <button id="start-btn">
+                Start Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- QUIZ PAGE -->
+
+    <div id="quiz-screen" class="screen hidden">
+
+        <div class="quiz-container">
+
+            <div class="quiz-top">
+
+                <div>
+
+                    <h2>
+                        How Well Do You Know Me?
+                    </h2>
+
+                    <p id="question-number">
+                        Question 1 of 5
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+
+            <div class="progress-container">
+
+                <div id="progress-bar"></div>
+
+            </div>
+
+
+            <!-- QUESTION IMAGE -->
+
+            <img
+                id="question-image"
+                class="question-image"
+                src=""
+                alt="Question image"
+            >
+
+
+            <!-- QUESTION -->
+
+            <h1 id="question">
+                Question
+            </h1>
+
+
+            <!-- OPTIONS -->
+
+            <div id="options"></div>
+
+
+            <!-- NEXT -->
+
+            <button
+                id="next-btn"
+                disabled
+            >
+                Next
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- RESULT PAGE -->
+
+    <div id="result-screen" class="screen hidden">
+
+        <div class="result-card">
+
+            <div class="result-icon" id="result-icon">
+                🎉
+            </div>
+
+            <h1 id="result-title">
+                Your Result
+            </h1>
+
+            <p id="result-message"></p>
+
+            <div class="score-circle">
+
+                <span id="final-score">
+                    0/5
+                </span>
+
+            </div>
+
+            <p id="percentage">
+                0% correct
+            </p>
+
+
+            <!-- ANSWER REVIEW -->
+
+            <h2 class="review-title">
+                Answer Review
+            </h2>
+
+            <div id="result-details"></div>
+
+
+            <button id="restart-btn">
+                Try Again
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
